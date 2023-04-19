@@ -1,0 +1,27 @@
+<resources>
+
+    <string name="hello_text_view">Hello.</string>
+    <string name="welcome_back_text_view">Welcome Back</string>
+    <string name="email_id_hint_edit_text">Email ID</string>
+    <string name="password_hint_edit_text">Password</string>
+    <string name="login_btn_text">Login</string>
+    <string name="don_t_have_an_account_text_view">Don\'t have an account? </string>
+    <string name="register_text_view">Register</string>
+    <string name="lets_get_started_text_view">Let\'s get started</string>
+    <string name="confirm_password_edit_text">Confirm Password</string>
+    <string name="create_account_btn_text">Create Account</string>
+    <string name="already_registered_text_view">Already registered? </string>
+    <string name="login_text_view">Login</string>
+    <string name="app_name">Mav Health</string>
+    <string name="add_new_note_text_view">Add New Note</string>
+    <string name="notes_title_hint">Title</string>
+    <string name="content_hint">Content</string>
+    <string name="redirect_to_notes_btn">Notes</string>
+    <string name="add_a_new_note_content_desc">Add a new note</string>
+    <string name="notes_title_text_view">Notes</string>
+    <string name="menu_button_content_desc">Menu button</string>
+    <string name="note_title_text_view">note title</string>
+    <string name="this_will_be_note_content_text_view">this will be note content</string>
+    <string name="this_will_be_time_stamp_text_view">this will be time stamp</string>
+    <string name="delete_note_text_view">Delete note</string>
+</resources>
