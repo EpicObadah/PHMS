@@ -1,4 +1,4 @@
-package com.example.notesapp;
+package com.example.mavhealth;
 
 import androidx.appcompat.app.AppCompatActivity;
 

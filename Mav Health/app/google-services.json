@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:708414443834:android:d95aca10a10cba22158003",
+        "mobilesdk_app_id": "1:708414443834:android:ca0af610be3722ff158003",
         "android_client_info": {
-          "package_name": "com.example.notesapp"
+          "package_name": "com.example.mavhealth"
         }
       },
       "oauth_client": [
