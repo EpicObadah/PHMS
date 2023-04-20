@@ -103,6 +103,8 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/login_page_register_layout"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/login_page_form_layout"
@@ -114,6 +116,7 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="16sp"
             android:text="@string/don_t_have_an_account_text_view" />
 
         <TextView
@@ -121,8 +124,36 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:text="@string/register_text_view"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_page_register_layout"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingTop="8dp">
+
+        <TextView
+            android:id="@+id/login_page_forgot_pass"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:text="@string/forgot_password_text_view" />
+
+        <TextView
+            android:id="@+id/login_page_reset_btn"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:text="@string/login_page_reset_text_view"/>
 
     </LinearLayout>
 

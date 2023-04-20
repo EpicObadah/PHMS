@@ -5,7 +5,7 @@
     <string name="email_id_hint_edit_text">Email ID</string>
     <string name="password_hint_edit_text">Password</string>
     <string name="login_btn_text">Login</string>
-    <string name="don_t_have_an_account_text_view">Don\'t have an account? </string>
+    <string name="don_t_have_an_account_text_view">Don\'t have an account?\u0020</string>
     <string name="register_text_view">Register</string>
     <string name="lets_get_started_text_view">Let\'s get started</string>
     <string name="confirm_password_edit_text">Confirm Password</string>
@@ -25,4 +25,10 @@
     <string name="this_will_be_time_stamp_text_view">this will be time stamp</string>
     <string name="delete_note_text_view">Delete note</string>
     <string name="home_btn_content_description">Home button</string>
+    <string name="reset_password_title_text_view">Reset password</string>
+    <string name="reset_password_btn_text">Reset Password</string>
+    <string name="back_to_text_view">Back to\u0020</string>
+    <string name="reset_pass_page_login_redirect">Login</string>
+    <string name="forgot_password_text_view">Forgot password?\u0020</string>
+    <string name="login_page_reset_text_view">Reset</string>
 </resources>
