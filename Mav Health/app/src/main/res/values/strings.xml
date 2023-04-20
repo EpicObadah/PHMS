@@ -24,4 +24,5 @@
     <string name="this_will_be_note_content_text_view">this will be note content</string>
     <string name="this_will_be_time_stamp_text_view">this will be time stamp</string>
     <string name="delete_note_text_view">Delete note</string>
+    <string name="home_btn_content_description">Home button</string>
 </resources>

@@ -20,6 +20,7 @@ public class NotesPageActivity extends AppCompatActivity {
     FloatingActionButton newNoteBtn;
     RecyclerView recyclerView;
     ImageButton menuBtn;
+    ImageButton homeBtn;
     NoteAdapter noteAdapter;
 
     @Override
@@ -30,10 +31,17 @@ public class NotesPageActivity extends AppCompatActivity {
         newNoteBtn = findViewById(R.id.new_note_btn);
         recyclerView = findViewById(R.id.recycler_view);
         menuBtn = findViewById(R.id.menu_btn);
+        homeBtn = findViewById(R.id.home_btn);
 
         newNoteBtn.setOnClickListener((v)-> startActivity(new Intent(NotesPageActivity.this, NoteDetailsActivity.class)));
         menuBtn.setOnClickListener((v)-> showMenu());
+        homeBtn.setOnClickListener((v)-> goToHome());
         setUpRecyclerView();
+    }
+
+    void goToHome(){
+        startActivity(new Intent(NotesPageActivity.this, MainActivity.class));
+        finish();
     }
 
     void showMenu(){
