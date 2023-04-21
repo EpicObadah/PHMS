@@ -15,6 +15,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.Query;
 
+import java.lang.reflect.Method;
+
 public class NotesPageActivity extends AppCompatActivity {
 
     FloatingActionButton newNoteBtn;
@@ -47,20 +49,29 @@ public class NotesPageActivity extends AppCompatActivity {
     void showMenu(){
         //display menu
         PopupMenu popupMenu = new PopupMenu(NotesPageActivity.this, menuBtn);
-        popupMenu.getMenu().add("Logout");
+
+        try {
+            Method method = popupMenu.getMenu().getClass().getDeclaredMethod("setOptionalIconsVisible", boolean.class);
+            method.setAccessible(true);
+            method.invoke(popupMenu.getMenu(), true);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        popupMenu.getMenuInflater().inflate(R.menu.popup_menu, popupMenu.getMenu());
         popupMenu.show();
 
         popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem menuItem) {
-                if(menuItem.getTitle() == "Logout"){
-                    FirebaseAuth.getInstance().signOut();
-                    startActivity(new Intent(NotesPageActivity.this, LoginActivity.class));
-                    finish();
-
-                    return true;
+                switch (menuItem.getItemId()) {
+                    case R.id.logout_item:
+                        FirebaseAuth.getInstance().signOut();
+                        startActivity(new Intent(NotesPageActivity.this, LoginActivity.class));
+                        finish();
+                    default:
+                        return false;
                 }
-                return false;
             }
         });
     }

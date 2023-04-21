@@ -31,4 +31,11 @@
     <string name="reset_pass_page_login_redirect">Login</string>
     <string name="forgot_password_text_view">Forgot password?\u0020</string>
     <string name="login_page_reset_text_view">Reset</string>
+    <string name="mav_health_dashboard_text_view">Mav Health</string>
+    <string name="vitals_dashboard_button_text">Vitals</string>
+    <string name="notes_dashboard_btn_text">Notes</string>
+    <string name="meds_dashboard_btn_text">Medications</string>
+    <string name="diet_dashboard_btn_text">Diet</string>
+    <string name="comm_dashboard_btn_text">Communication</string>
+    <string name="alerts_dashboard_btn_text">Set reminders</string>
 </resources>
