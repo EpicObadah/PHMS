@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/my_primary"
+    android:background="@color/my_secondary"
     android:padding="16dp"
     tools:context=".MainActivity">
 
@@ -19,11 +19,14 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="12dp"
-            android:textSize="32sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/mav_health_dashboard_text_view"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:text="@string/mav_health_dashboard_text_view"/>
+            android:textSize="32sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:id="@+id/title_bar_layout"
@@ -63,7 +66,7 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_corner"
             android:textSize="20sp"
-            android:textColor="@color/my_primary"
+            android:textColor="@color/my_secondary"
             app:backgroundTint="@color/white"
             android:text="@string/vitals_dashboard_button_text"/>
 
@@ -77,7 +80,7 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_corner"
             android:textSize="20sp"
-            android:textColor="@color/my_primary"
+            android:textColor="@color/my_secondary"
             app:backgroundTint="@color/white"
             android:text="@string/meds_dashboard_btn_text"/>
 
@@ -91,7 +94,7 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_corner"
             android:textSize="20sp"
-            android:textColor="@color/my_primary"
+            android:textColor="@color/my_secondary"
             app:backgroundTint="@color/white"
             android:text="@string/diet_dashboard_btn_text"/>
 
@@ -105,7 +108,7 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_corner"
             android:textSize="20sp"
-            android:textColor="@color/my_primary"
+            android:textColor="@color/my_secondary"
             app:backgroundTint="@color/white"
             android:text="@string/notes_dashboard_btn_text"/>
 
@@ -119,7 +122,7 @@
             android:layout_marginTop="12dp"
             android:background="@drawable/rounded_corner"
             android:textSize="20sp"
-            android:textColor="@color/my_primary"
+            android:textColor="@color/my_secondary"
             app:backgroundTint="@color/white"
             android:text="@string/comm_dashboard_btn_text"/>
 
@@ -134,7 +137,7 @@
             android:layout_marginBottom="12dp"
             android:background="@drawable/rounded_corner"
             android:textSize="20sp"
-            android:textColor="@color/my_primary"
+            android:textColor="@color/my_secondary"
             app:backgroundTint="@color/white"
             android:text="@string/alerts_dashboard_btn_text"/>
 

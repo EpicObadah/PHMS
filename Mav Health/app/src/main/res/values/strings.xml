@@ -10,7 +10,7 @@
     <string name="lets_get_started_text_view">Let\'s get started</string>
     <string name="confirm_password_edit_text">Confirm Password</string>
     <string name="create_account_btn_text">Create Account</string>
-    <string name="already_registered_text_view">Already registered? </string>
+    <string name="already_registered_text_view">Already registered?\u0020</string>
     <string name="login_text_view">Login</string>
     <string name="app_name">Mav Health</string>
     <string name="add_new_note_text_view">Add New Note</string>
@@ -38,4 +38,6 @@
     <string name="diet_dashboard_btn_text">Diet</string>
     <string name="comm_dashboard_btn_text">Communication</string>
     <string name="alerts_dashboard_btn_text">Set reminders</string>
+    <string name="reg_page_app_name">Mav Health</string>
+    <string name="login_page_app_name">Mav Health</string>
 </resources>
