@@ -22,6 +22,42 @@ public class Utility {
         return FirebaseFirestore.getInstance().collection("notes").document(currentUser.getUid()).collection("my_notes");
     }
 
+    static CollectionReference getCollectionReferenceForBloodOxygen(){
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        return FirebaseFirestore.getInstance().collection("vitals")
+                .document(currentUser.getUid()).collection("blood_oxygen");
+    }
+
+    static CollectionReference getCollectionReferenceForBloodPressure(){
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        return FirebaseFirestore.getInstance().collection("vitals")
+                .document(currentUser.getUid()).collection("blood_pressure");
+    }
+
+    static CollectionReference getCollectionReferenceForBodyTemperature(){
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        return FirebaseFirestore.getInstance().collection("vitals")
+                .document(currentUser.getUid()).collection("body_temperature");
+    }
+
+    static CollectionReference getCollectionReferenceForMenstruation(){
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        return FirebaseFirestore.getInstance().collection("vitals")
+                .document(currentUser.getUid()).collection("menstruation");
+    }
+
+    static CollectionReference getCollectionReferenceForBloodGlucose(){
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        return FirebaseFirestore.getInstance().collection("vitals")
+                .document(currentUser.getUid()).collection("blood_glucose");
+    }
+
+    static CollectionReference getCollectionReferenceForMedication(){
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        return FirebaseFirestore.getInstance().collection("medications")
+                .document(currentUser.getUid()).collection("my_meds");
+    }
+
     static String timestampToString(Timestamp timestamp){
         return new SimpleDateFormat("MM/dd/yyyy").format(timestamp.toDate());
     }

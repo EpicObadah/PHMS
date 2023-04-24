@@ -18,7 +18,7 @@ import java.lang.reflect.Method;
 
 public class MainActivity extends AppCompatActivity{
 
-    MaterialButton notesBtn;
+    MaterialButton notesBtn, medBtn, vitalsBtn;
     ImageButton menuBtn;
 
     @Override
@@ -31,6 +31,12 @@ public class MainActivity extends AppCompatActivity{
 
         notesBtn = findViewById(R.id.notes_dashboard_btn);
         notesBtn.setOnClickListener((v)-> startActivity(new Intent(MainActivity.this, NotesPageActivity.class)));
+
+        medBtn = findViewById(R.id.meds_dashboard_btn);
+        medBtn.setOnClickListener((v)-> startActivity(new Intent(MainActivity.this, MedicationActivity.class)));
+
+        vitalsBtn = findViewById(R.id.vitals_dashboard_btn);
+        vitalsBtn.setOnClickListener((v)-> startActivity(new Intent(MainActivity.this, VitalsActivity.class)));
     }
 
     void showMenu() {

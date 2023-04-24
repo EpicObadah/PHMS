@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_secondary"
+    android:padding="16dp"
+    tools:context=".MedicationActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_bar_layout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/page_title"
+            android:text="Add New Medication"
+            android:textSize="32sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/save_med_btn"
+            android:src="@drawable/baseline_done_24"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            app:tint="@color/white"
+            android:background="?attr/selectableItemBackgroundBorderless"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar_layout"
+        android:id="@+id/med_name_layout"
+        android:orientation="vertical"
+        android:layout_marginVertical="26dp"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/med_name_text_view"
+            android:padding="16dp"
+            android:text="Name:"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/med_name_edit_text"
+            android:padding="16dp"
+            android:layout_toRightOf="@id/med_name_text_view"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/med_name_layout"
+        android:id="@+id/med_rx_layout"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_rx_text_view"
+                android:padding="16dp"
+                android:text="RX Number:"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/med_rx_edit_text"
+                android:padding="16dp"
+                android:layout_toRightOf="@id/med_rx_text_view"
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/med_rx_layout"
+        android:layout_marginVertical="26dp"
+        android:id="@+id/med_strength_layout"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white">
+
+        <TextView
+            android:id="@+id/med_strength_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Strength:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/med_strength_edit_text"
+            android:padding="16dp"
+            android:layout_toRightOf="@id/med_strength_text_view"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/med_strength_layout"
+        android:id="@+id/med_dosage_layout"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white">
+
+        <TextView
+            android:id="@+id/med_dosage_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Dosage:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/med_dosage_edit_text"
+            android:padding="16dp"
+            android:layout_toRightOf="@id/med_dosage_text_view"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/med_dosage_layout"
+        android:layout_marginVertical="26dp"
+        android:id="@+id/med_time_layout"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white">
+
+        <TextView
+            android:id="@+id/med_time_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Schedule:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/med_timepicker"
+            android:timePickerMode="spinner"
+            android:padding="16dp"
+            android:layout_toEndOf="@id/med_time_text_view"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:id="@+id/delete_med_text_view_btn"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="#D22B2B	"
+        android:text="Delete medication"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        />
+
+
+
+</RelativeLayout>

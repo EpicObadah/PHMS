@@ -38,6 +38,40 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+
+<!--        from hayden-->
+        <activity
+            android:name=".BloodGlucoseActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".BloodOxygenActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".BloodPressureActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".BodyTemperatureActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MedDetailsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MedicationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".MenstruationActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".VitalsActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>
