@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_secondary"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/dashboard_title_bar_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dashboard_page_title"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/mav_health_dashboard_text_view"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/title_bar_layout"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/dashboard_menu_btn"
+
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:contentDescription="@string/menu_button_content_desc"
+                android:src="@drawable/baseline_menu_24"
+                app:tint="@color/white"
+                android:background="?attr/selectableItemBackgroundBorderless"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/dashboard_title_bar_layout">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/vitals_dashboard_btn"
+
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_corner"
+            android:textSize="20sp"
+            android:textColor="@color/my_secondary"
+            app:backgroundTint="@color/white"
+            android:text="@string/vitals_dashboard_button_text"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/meds_dashboard_btn"
+
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/vitals_dashboard_btn"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_corner"
+            android:textSize="20sp"
+            android:textColor="@color/my_secondary"
+            app:backgroundTint="@color/white"
+            android:text="@string/meds_dashboard_btn_text"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/diet_dashboard_btn"
+
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/meds_dashboard_btn"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_corner"
+            android:textSize="20sp"
+            android:textColor="@color/my_secondary"
+            app:backgroundTint="@color/white"
+            android:text="@string/diet_dashboard_btn_text"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/notes_dashboard_btn"
+
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/diet_dashboard_btn"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_corner"
+            android:textSize="20sp"
+            android:textColor="@color/my_secondary"
+            app:backgroundTint="@color/white"
+            android:text="@string/notes_dashboard_btn_text"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/comm_dashboard_btn"
+
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/notes_dashboard_btn"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_corner"
+            android:textSize="20sp"
+            android:textColor="@color/my_secondary"
+            app:backgroundTint="@color/white"
+            android:text="@string/comm_dashboard_btn_text"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/alerts_dashboard_btn"
+
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/comm_dashboard_btn"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/rounded_corner"
+            android:textSize="20sp"
+            android:textColor="@color/my_secondary"
+            app:backgroundTint="@color/white"
+            android:text="@string/alerts_dashboard_btn_text"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

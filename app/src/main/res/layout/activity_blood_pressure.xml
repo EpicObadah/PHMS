@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_secondary"
+    android:padding="16dp"
+    tools:context=".BloodPressureActivity">
+
+    <TextView
+        android:id="@+id/blood_pressure_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Blood Pressure"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/blood_systolic_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blood_pressure_title"
+        android:layout_marginTop="12dp"
+        android:text="Systolic:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/blood_systolic_edit_text"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/blood_pressure_title"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:inputType="numberDecimal"
+        android:gravity="center_horizontal"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white" />
+
+    <TextView
+        android:id="@+id/blood_diastolic_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blood_systolic_text_view"
+        android:layout_marginTop="12dp"
+        android:text="Diastolic:"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        />
+
+    <EditText
+        android:id="@+id/blood_diastolic_edit_text"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/blood_systolic_edit_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:inputType="numberDecimal"
+        android:gravity="center_horizontal"
+        android:background="@drawable/rounded_corner"
+        android:backgroundTint="@color/white" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_below="@id/blood_diastolic_text_view"
+        android:layout_centerInParent="true"
+        android:id="@+id/blood_pressure_done_btn"
+        android:text="Done"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"
+        android:paddingVertical="12dp"
+        android:textSize="16sp"
+        android:backgroundTint="@color/white"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/blood_pressure_done_btn"
+        android:layout_marginTop="12dp"
+        android:id="@+id/recycler_view"/>
+
+</RelativeLayout>

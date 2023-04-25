@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_secondary"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".VitalsActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/vitals_text_view"
+        android:text="Vitals"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/blood_glucose_btn"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/vitals_text_view"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        android:text="Blood Glucose"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/blood_oxygen_btn"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/vitals_text_view"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        android:text="Blood Oxygen"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/blood_pressure_btn"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/blood_glucose_btn"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        android:text="Blood Pressure"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/body_temp_btn"
+        android:layout_width="160dp"
+        android:layout_height="150dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/blood_oxygen_btn"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="@color/white"
+        android:text="Body Temperature"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/menstruation_btn"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:layout_below="@id/blood_pressure_btn"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:text="Menstruation"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>

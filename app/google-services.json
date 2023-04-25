@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "708414443834",
+    "project_id": "phms-7312e",
+    "storage_bucket": "phms-7312e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708414443834:android:ca0af610be3722ff158003",
+        "android_client_info": {
+          "package_name": "com.example.mavhealth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708414443834-3bn7vv8d79pfubm6kltkcaqj643l7l55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlJLc_r4P5QUyK7J5J4lhX6AuCNDWUj2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708414443834-3bn7vv8d79pfubm6kltkcaqj643l7l55.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

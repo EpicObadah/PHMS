@@ -1,0 +1,72 @@
+<resources>
+
+    <string name="hello_text_view">Hello.</string>
+    <string name="welcome_back_text_view">Welcome Back</string>
+    <string name="email_id_hint_edit_text">Email ID</string>
+    <string name="password_hint_edit_text">Password</string>
+    <string name="login_btn_text">Login</string>
+    <string name="don_t_have_an_account_text_view">Don\'t have an account?\u0020</string>
+    <string name="register_text_view">Register</string>
+    <string name="lets_get_started_text_view">Let\'s get started</string>
+    <string name="confirm_password_edit_text">Confirm Password</string>
+    <string name="create_account_btn_text">Create Account</string>
+    <string name="already_registered_text_view">Already registered?\u0020</string>
+    <string name="login_text_view">Login</string>
+    <string name="app_name">Mav Health</string>
+    <string name="add_new_note_text_view">Add New Note</string>
+    <string name="notes_title_hint">Title</string>
+    <string name="content_hint">Content</string>
+    <string name="redirect_to_notes_btn">Notes</string>
+    <string name="add_a_new_note_content_desc">Add a new note</string>
+    <string name="notes_title_text_view">Notes</string>
+    <string name="menu_button_content_desc">Menu button</string>
+    <string name="note_title_text_view">note title</string>
+    <string name="this_will_be_note_content_text_view">this will be note content</string>
+    <string name="this_will_be_time_stamp_text_view">this will be time stamp</string>
+    <string name="delete_note_text_view">Delete note</string>
+    <string name="home_btn_content_description">Home button</string>
+    <string name="reset_password_title_text_view">Reset password</string>
+    <string name="reset_password_btn_text">Reset Password</string>
+    <string name="back_to_text_view">Back to\u0020</string>
+    <string name="reset_pass_page_login_redirect">Login</string>
+    <string name="forgot_password_text_view">Forgot password?\u0020</string>
+    <string name="login_page_reset_text_view">Reset</string>
+    <string name="mav_health_dashboard_text_view">Mav Health</string>
+    <string name="vitals_dashboard_button_text">Vitals</string>
+    <string name="notes_dashboard_btn_text">Notes</string>
+    <string name="meds_dashboard_btn_text">Medications</string>
+    <string name="diet_dashboard_btn_text">Diet</string>
+    <string name="comm_dashboard_btn_text">Communication</string>
+    <string name="alerts_dashboard_btn_text">Set reminders</string>
+    <string name="reg_page_app_name">Mav Health</string>
+    <string name="login_page_app_name">Mav Health</string>
+
+    <!-- The following are for contacts -->
+    <string name="add_new_contact">Add Contact</string>
+    <string name="add_full_name">Add Full Name</string>
+    <string name="add_contact_number">Add Contact Number</string>
+    <string name="save_contact">Save Contact</string>
+    <string name="error">%1$s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="added_contact">Contact has been added successfully</string>
+
+    <string-array name="mealtime_array">
+        <item>Unspecified</item>
+        <item>Before Meal</item>
+        <item>After Meal</item>
+    </string-array>
+
+    <string-array name="flow_array">
+        <item>Light</item>
+        <item>Medium</item>
+        <item>Heavy</item>
+        <item>Abnormal</item>
+    </string-array>
+
+    <string-array name="yesno_array">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+</resources>
