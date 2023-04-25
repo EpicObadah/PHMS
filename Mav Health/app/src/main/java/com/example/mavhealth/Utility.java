@@ -22,6 +22,14 @@ public class Utility {
         return FirebaseFirestore.getInstance().collection("notes").document(currentUser.getUid()).collection("my_notes");
     }
 
+    static CollectionReference getCollectionReferenceForDiet()
+    {
+        FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+        return FirebaseFirestore.getInstance().collection("diet")
+                .document(currentUser.getUid()).collection("my_diet");
+
+    }
+
     static CollectionReference getCollectionReferenceForBloodOxygen(){
         FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
         return FirebaseFirestore.getInstance().collection("vitals")

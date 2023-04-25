@@ -21,6 +21,9 @@ public class MainActivity extends AppCompatActivity{
     MaterialButton notesBtn, medBtn, vitalsBtn;
     ImageButton menuBtn;
 
+    MaterialButton goToNotesPage;
+    MaterialButton gotoDietPage;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,6 +40,9 @@ public class MainActivity extends AppCompatActivity{
 
         vitalsBtn = findViewById(R.id.vitals_dashboard_btn);
         vitalsBtn.setOnClickListener((v)-> startActivity(new Intent(MainActivity.this, VitalsActivity.class)));
+
+        gotoDietPage = findViewById(R.id.diet_dashboard_btn);
+        gotoDietPage.setOnClickListener((v)-> startActivity(new Intent(MainActivity.this, DietDetails.class)));
     }
 
     void showMenu() {

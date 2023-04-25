@@ -12,6 +12,13 @@
         android:theme="@style/Theme.MavHealth"
         tools:targetApi="31">
         <activity
+            android:name=".DietDetails"
+            android:exported="false"/>
+        <activity
+            android:name=".CreateDiet"
+            android:exported="false" />
+
+        <activity
             android:name=".ForgotPasswordActivity"
             android:exported="false" />
         <activity
